@@ -6,7 +6,8 @@ export default class FilterMenu extends Component {
 	render() {
 	return (
 	<div>
-	<BookType/> <PrintType/>
+		<BookType/>
+		<PrintType/>
 	</div>)
 
 	}

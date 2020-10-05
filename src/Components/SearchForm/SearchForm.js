@@ -13,7 +13,7 @@ export default class SearchForm extends Component {
 	render() {
 		return (
 			<form>
-				<input type="text" placeholder="Title of the book" onChange={this.onQueryChange} required/>
+				<input type="text" placeholder="Title of the book" onChange={(e) => this.onQueryChange(e.target.value)} required/>
 			</form>
 		)
 	}

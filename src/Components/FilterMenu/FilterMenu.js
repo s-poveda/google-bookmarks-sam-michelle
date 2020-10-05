@@ -3,7 +3,11 @@ import PrintType from '../FilterMenuPrintType/PrintType';
 import BookType from '../FilterMenuBookType/BookType';
 
 export default class FilterMenu extends Component {
-	state = {
+	render() {
+	return (
+	<div>  
+	<BookType/> <PrintType/>
+	</div>)
 		
 	}
 }

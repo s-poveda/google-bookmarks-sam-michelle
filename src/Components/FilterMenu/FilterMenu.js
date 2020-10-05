@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import FilterMenu from './FilterMenu';
+import React, { Component } from 'react';
+import PrintType from '../FilterMenuPrintType/PrintType';
+import BookType from '../FilterMenuBookType/BookType';
 
-describe('Filter menu tests', () => {
-	it('smoke test: renders without crashing', () => {
-		const div = document.createElement('div');
-		ReactDOM.render(<FilterMenu />, div);
-		ReactDOM.unmountComponentAtNode(div);
-	});
-});
+export default class FilterMenu extends Component {
+	render() {
+	return (
+	<div>
+	<BookType/> <PrintType/>
+	</div>)
+
+	}
+}

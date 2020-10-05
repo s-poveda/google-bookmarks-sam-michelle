@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function PrintType() {
+export default function PrintType(props) {
     return(
         <div>
-            <label for="PrintTypeFilter">
+            <label htmlFor="PrintTypeFilter">
                 filter by Print Type
             </label>
-        <select id="PrintTypeFilter">
+        <select id="PrintTypeFilter" onChange={(e) => props.onPrintTypeFilterChange(e.currentTarget.value)}>
             <option value="all">All</option>
             <option value="books">Books</option>
             <option value="magazines">Magazines</option>
